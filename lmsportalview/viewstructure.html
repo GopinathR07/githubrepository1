@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shipping calculator</title>
+    <link rel="stylesheet" href="viewstyle.css">
 </head>
 <body>
+    <marquee  direction="left" loop="">
+        <h1>To calculate Shipping Amount</h1>
+    </marquee>
+   
+
+    <div class="mainclass">
+        <input type="text" placeholder="Enter Amount" class="inp_load" >
+        <button type="button" class="sub_btn" onclick="calculateval()">Submit</button>
+    </div>
+    <p>The shipping cost is less than $40 : +$10 delevery charge</p>
+    <p>The shipping cose is grater than $40 : Free delevery</p>
+
     
+    <div class="showresult"></div>
 </body>
+<script src="viewlogic.js"></script>
 </html>
