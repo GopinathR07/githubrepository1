@@ -13,7 +13,10 @@
    
 
     <div class="mainclass">
-        <input type="text" placeholder="Enter Amount" class="inp_load" >
+        <input type="text" placeholder="Enter Amount" class="inp_load" id = "placeholder_id" onkeydown="
+         if(event.key === 'Enter'){
+            calculateval();
+        }">
         <button type="button" class="sub_btn" onclick="calculateval()">Submit</button>
     </div>
     <p>The shipping cost is less than $40 : +$10 delevery charge</p>
@@ -24,3 +27,4 @@
 </body>
 <script src="viewlogic.js"></script>
 </html>
+
